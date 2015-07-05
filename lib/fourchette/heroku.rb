@@ -15,7 +15,7 @@ class Fourchette::Heroku
   def fork(from, to)
     create_app(to)
     copy_config(from, to)
-    copy_add_ons(from, to)
+    #copy_add_ons(from, to)
     copy_pg(from, to)
     copy_rack_and_rails_env_again(from, to)
   end
